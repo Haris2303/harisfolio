@@ -1,0 +1,138 @@
+.services {
+  padding: 100px;
+  box-sizing: border-box;
+}
+
+.services .sub-title {
+  font-family: var(--font);
+  text-align: center;
+  line-height: 70px;
+}
+
+.services .sub-title h2 {
+  color: var(--font-color);
+  font-size: 55px;
+  text-transform: uppercase;
+}
+
+.services .sub-title p {
+  color: #777;
+  line-height: 20px;
+  margin-bottom: 20px;
+}
+
+.services hr {
+  width: 100px;
+  height: 5px;
+  margin: 0 auto;
+  margin-bottom: 100px;
+  background-color: var(--blue-color);
+  border: none;
+  border-radius: 5px;
+}
+
+
+/* services content card */
+.services .content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  align-content: space-evenly;
+  text-align: center;
+  gap: 30px;
+}
+
+.services .content .card {
+  display: grid;
+  font-family: var(--font);
+  gap: 10px;
+  background-color: var(--content-color);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: var(--card-shadow);
+}
+
+.services .content .card .logo {
+  display: flex;
+  color: #333;
+  justify-content: center;
+  align-items: center;
+  background: var(--content-color);
+  width: 100px;
+  height: 100px;
+  box-sizing: border-box;
+  font-size: 45px;
+  margin: 0 auto;
+  border-radius: 50%;
+  border: 10px solid var(--blue-color);
+  transition: all .5s;
+}
+
+.services .content .card:hover > .logo{
+  color: var(--content-color);
+  background: var(--blue-color);
+  border-color: rgb(206, 229, 236);
+}
+
+.services .content .card h3 {
+  font-size: 22px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.services .content .card p {
+  color: #555;
+  font-size: 16px;
+}
+
+
+/* service exp */
+.exp {
+  display: grid;
+  padding: 150px 100px;
+  box-sizing: border-box;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  background: linear-gradient(to right, rgba(255 0 0 / 0.8), rgba(0 0 255 / 0.8)),url(../assets/img/header/header.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  gap: 50px;
+}
+
+.exp .card {
+  display: grid;
+  font-family: var(--font);
+  text-align: center;
+  gap: 10px;
+  border-radius: 10px;
+}
+
+.exp .card .logo {
+  display: flex;
+  color: var(--content-color);
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  width: 80px;
+  height: 80px;
+  box-sizing: border-box;
+  font-size: 30px;
+  margin: 0 auto;
+  border-radius: 50%;
+  border: 10px solid rgba(255, 255, 255, 0.7);
+  transition: all .5s;
+}
+
+.exp .card h3 {
+  font-size: 35px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: var(--content-color);
+}
+
+.exp .card p {
+  color: var(--content-color);
+  font-size: 16px;
+  font-weight: 300;
+  text-transform: uppercase;
+}

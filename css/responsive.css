@@ -1,0 +1,187 @@
+/* notebook */
+@media screen and (max-width: 1220px) {
+
+  .about .content {
+    grid-template-areas: 
+      'img identity identity'
+      'skill skill skill'
+      'desc desc desc';
+  }
+
+  /* .about .content .card {
+    width: 100vh;
+  } */
+
+  /* about desc */
+  .about .content .desc {
+    padding: 10px;
+  }
+
+  .about .content .desc h2 {
+    text-align: center;
+  }
+
+  .about .content .desc h2::after {
+    margin: 10px auto;
+  }
+}
+
+
+/* tablet */
+@media screen and (max-width: 882px) {
+  .header .content h1 {
+    font-size: 55px;
+  }
+
+  .header .content p {
+    font-size: 30px;
+  }
+
+  nav .logo {
+    font-size: 22px;
+  }
+  
+ nav ul {
+  width: 60%;
+ }
+
+ nav ul li a {
+  font-size: 14px;
+ }
+
+ 
+ /* about */
+ .about {
+  padding: 100px 10px;
+ }
+
+ .about .content {
+  grid-template-areas: 
+    'img identity'
+    'skill skill'
+    'desc desc';
+ }
+
+ .about .content .card {
+  justify-content: start;
+  grid-template-areas: 
+    'img identity'
+    'skill skill';
+}
+
+}
+
+/* mobile */
+@media screen and (max-width: 678px) {
+
+  /* header */
+  .header {
+    background-attachment: scroll;
+  }
+  .header .content h1{
+    line-height: 60px;
+    margin-bottom: 20px;
+  }
+  
+  /* nav */
+  nav ul {
+    position: absolute;
+    width: 40%;
+    top: 100px;
+    right: 0;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    height: 300%;
+    z-index: 8;
+    transform: translateY(-65%) translateX(5%) scale(0);
+    border-radius: 0 0 10px 10px;
+  }
+
+  nav ul li::after {
+    display: none;
+  }
+
+  nav ul.slide {
+    transform: translateY(0);
+  }
+
+  nav .menu-toggle {
+    display: flex;
+    z-index: 10;
+  }
+
+
+  /* about */
+  .about {
+    padding: 100px 10px;
+  }
+
+  .about .content {
+    padding: 10px;
+    grid-template-areas: 
+     'img'
+     'identity'
+     'skill'
+     'desc';
+  }
+
+  .about .content .card {
+    justify-content: start;
+    padding: 10px;
+    box-sizing: border-box;
+    grid-template-areas: 
+      'img'
+      'identity'
+      'skill';
+  }
+
+  .about .content .card .identity {
+    font-size: 20px;
+  }
+
+  .about .content .skill {
+    font-size: 14px;
+  }
+
+  .about .content .desc {
+    padding: 10px;
+    gap: 20px;
+    box-sizing: border-box;
+  }
+
+  /* services */
+  .services {
+    padding: 10px;
+  }
+
+  .services .sub-title h2 {
+    font-size: 45px;
+  }
+
+
+  /* exp */
+  .exp {
+    grid-template-columns: 1fr;
+    background-attachment: scroll;
+  }
+
+
+  /* portfolio */
+  .portfolio {
+    padding: 10px;
+  }
+
+  .portfolio .sub-title h2 {
+    font-size: 45px;
+  }
+
+
+  /* slider */
+  .swiper {
+    width: 100%;
+    padding: 150px 0;
+  }
+}

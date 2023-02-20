@@ -1,0 +1,40 @@
+/* portfolio card */
+.swiper {
+  color: var(--content-color);
+  font-family: var(--font);
+  width: 80%;
+  height: 650px;
+  text-align: center;
+  padding: 200px 0;
+  box-sizing: border-box;
+}
+
+.swiper-slide img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.swiper-slide .name {
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+.swiper-slide .desc {
+  padding: 20px 50px;
+  font-size: 20px;
+}
+
+.container .bg-slide {
+  background: linear-gradient(to right, rgba(255 0 0 / 0.8), rgba(0 0 255 / 0.8)),url(../assets/img/header/header.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.swiper-pagination-bullet {
+  background-color: white;
+  width: 15px;
+  height: 15px;
+}
