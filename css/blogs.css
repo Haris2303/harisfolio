@@ -44,8 +44,10 @@
 
 .blogs .content .card {
   display: grid;
+  position: relative;
   font-family: var(--font);
   gap: 10px;
+  padding-bottom: 50px;
   background-color: var(--content-color);
   border-radius: 5px;
   box-shadow: var(--card-shadow);
@@ -99,11 +101,15 @@
 
 /* author */
 .author {
+  position: absolute;
   display: flex;
   height: 50px;
   background-color: #eee;
   justify-content: space-between;
   align-items: center;
+  bottom: 0;
+  right: 0;
+  left: 0;
 }
 
 .author .profile {

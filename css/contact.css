@@ -65,6 +65,13 @@
   margin-top: 20px;
   border-radius: 50px;
   border: none;
+  cursor: pointer;
+  transition: all .3s;
+}
+
+.contact .content .form button:hover {
+  box-shadow: 0 0 5px 5px lightblue;
+  opacity: 0.9;
 }
 
 
