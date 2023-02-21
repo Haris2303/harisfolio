@@ -1,0 +1,139 @@
+.blogs {
+  padding: 100px;
+  box-sizing: border-box;
+}
+
+.blogs .sub-title {
+  font-family: var(--font);
+  text-align: center;
+  line-height: 70px;
+}
+
+.blogs .sub-title h2 {
+  color: var(--font-color);
+  font-size: 55px;
+  text-transform: uppercase;
+}
+
+.blogs .sub-title p {
+  color: #777;
+  line-height: 20px;
+  margin-bottom: 20px;
+}
+
+.blogs hr {
+  width: 100px;
+  height: 5px;
+  margin: 0 auto;
+  margin-bottom: 100px;
+  background-color: var(--blue-color);
+  border: none;
+  border-radius: 5px;
+}
+
+
+/* card */
+
+/* portfolio card */
+.blogs .content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  align-content: space-evenly;
+  gap: 30px;
+}
+
+.blogs .content .card {
+  display: grid;
+  font-family: var(--font);
+  gap: 10px;
+  background-color: var(--content-color);
+  border-radius: 5px;
+  box-shadow: var(--card-shadow);
+  overflow: hidden;
+}
+
+.blogs .content .card .img {
+  width: 100%;
+  height: 230px;
+  overflow: hidden;
+}
+
+.blogs .content .card img {
+  width: 100%;
+}
+
+.blogs .content .card .category {
+  display: flex;
+  justify-content: center;
+  margin: -25px auto 0;
+  color: var(--font-color-light);
+  background-color: var(--blue-color);  
+  width: 70px;
+  padding: 8px 3px 10px 3px;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  border-radius: 3px;
+  z-index: 999;
+}
+
+.blogs .content .card .blog-title h3 {
+  color: #333;
+  margin: 5px 20px 0 20px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.blogs .content .card .blog-body {
+  color: #777;
+  margin: 0 0 30px 20px;
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: capitalize;
+}
+
+.blogs .content .card .blog-body span {
+  color: #777;
+}
+
+/* author */
+.author {
+  display: flex;
+  height: 50px;
+  background-color: #eee;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.author .profile {
+  display: grid;
+  grid-template-columns: 1fr 2.5fr;
+  width: 150px;
+  align-items: center;
+  margin-left: 20px;
+}
+
+.blogs .content .card .author .profile img {
+  width: 35px;
+  border-radius: 50%;
+}
+
+.blogs .content .card .author .profile h5 {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.author .time-logo {
+  display: grid;
+  color: #777;
+  font-size: 16px;
+  width: 100px;
+  align-items: center;
+  grid-template-columns: 0.5fr 1fr;
+}
+
+.author ion-icon {
+  font-size: 20px;
+  margin-left: 10px;
+}

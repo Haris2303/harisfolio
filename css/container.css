@@ -31,6 +31,8 @@ body {
 .container {
   display: grid;
   background: var(--bg-color);
+  position: relative;
+  overflow: hidden;
 }
 
 nav {
@@ -43,10 +45,6 @@ nav {
 
 section {
   min-height: 700px;
-}
-
-.blogs {
-  background-color: orange;
 }
 
 .contact {

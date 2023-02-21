@@ -34,7 +34,9 @@
 }
 
 .swiper-pagination-bullet {
+  position: relative;
   background-color: white;
+  top: -100px;
   width: 15px;
   height: 15px;
 }

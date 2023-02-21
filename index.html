@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio v1</title>
+    <!-- bootstrap icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
     <!-- Link Swiper's CSS -->
     <link
       rel="stylesheet"
@@ -17,6 +22,9 @@
     <link rel="stylesheet" href="css/service.css" />
     <link rel="stylesheet" href="css/portfolio.css" />
     <link rel="stylesheet" href="css/slider.css" />
+    <link rel="stylesheet" href="css/blogs.css" />
+    <link rel="stylesheet" href="css/contact.css" />
+    <link rel="stylesheet" href="css/footer.css" />
     <link rel="stylesheet" href="css/responsive.css" />
   </head>
   <body>
@@ -36,18 +44,18 @@
         </div>
 
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Portfolio</a></li>
-          <li><a href="#">Blogs</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#blogs">Blogs</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
       <!-- end navbar -->
 
       <!-- header -->
-      <section class="header">
+      <section class="header" id="home">
         <div class="content">
           <h1>I am Haris Kimochi</h1>
           <p>Developer</p>
@@ -56,7 +64,7 @@
       <!-- end headeer -->
 
       <!-- about -->
-      <section class="about">
+      <section class="about" id="about">
         <div class="content">
           <div class="card">
             <div class="card-img">
@@ -106,7 +114,7 @@
       <!-- end about -->
 
       <!-- services -->
-      <section class="services">
+      <section class="services" id="services">
         <div class="sub-title">
           <h2>Service</h2>
           <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
@@ -213,7 +221,7 @@
 
       <!-- portfolio -->
       <br /><br /><br /><br /><br />
-      <section class="portfolio">
+      <section class="portfolio" id="portfolio">
         <div class="sub-title">
           <h2>Portfolio</h2>
           <p>Lorem ipsum, dolor sit amet consectetur.</p>
@@ -291,53 +299,198 @@
       <!-- end portfolio -->
 
       <!-- slider -->
-      <!-- <div class="slide-content"> -->
-      
-        <div class="container bg-slide">
 
-          <div class="swiper mySwiper">
-            <div class="swiper-wrapper">
-              
-              <div class="swiper-slide">
-                <div class="img">
-                  <img src="https://source.unsplash.com/random/220x200" alt="" />
-                </div>
-                <div class="name">
-                  <h3>Haris Kun</h3>
-                </div>
-                <div class="desc">
-                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae, nisi?</p>
-                </div>
+      <div class="container bg-slide">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="img">
+                <img src="https://source.unsplash.com/random/220x200" alt="" />
               </div>
-    
-              <div class="swiper-slide">
-                <div class="img">
-                  <img src="https://source.unsplash.com/random/222x200" alt="" />
-                </div>
-                <div class="name">
-                  <h3>Lorem, ipsum.</h3>
-                </div>
-                <div class="desc">
-                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum delectus, explicabo nihil consequatur sequi architecto.</p>
-                </div>
+              <div class="name">
+                <h3>Haris Kun</h3>
+              </div>
+              <div class="desc">
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Recusandae, nisi?
+                </p>
               </div>
             </div>
-            <div class="swiper-pagination"></div>
+
+            <div class="swiper-slide">
+              <div class="img">
+                <img src="https://source.unsplash.com/random/222x200" alt="" />
+              </div>
+              <div class="name">
+                <h3>Lorem, ipsum.</h3>
+              </div>
+              <div class="desc">
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum
+                  delectus, explicabo nihil consequatur sequi architecto.
+                </p>
+              </div>
+            </div>
           </div>
+          <div class="swiper-pagination"></div>
         </div>
-      <!-- </div> -->
+      </div>
       <!-- end slider -->
 
       <!-- blogs -->
-      <section class="blogs"></section>
+      <section class="blogs" id="blogs">
+        <div class="sub-title">
+          <h2>Blog</h2>
+          <p>Lorem ipsum, dolor sit amet consectetur.</p>
+          <hr />
+        </div>
+        <div class="content">
+          <div class="card">
+            <div class="img">
+              <img src="https://source.unsplash.com/random/227x200" alt="" />
+            </div>
+            <span class="category">Travel</span>
+            <div class="blog-title">
+              <h3>I found a love for me</h3>
+            </div>
+            <div class="blog-body">
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos
+                beatae provident natus nam blanditiis fugit iusto dolor veniam
+                modi debitis, consectetur amet, similique commodi harum incidunt
+                id repellat doloremque totam.
+              </p>
+            </div>
+            <div class="author">
+              <div class="profile">
+                <img src="https://source.unsplash.com/random/229x223" alt="" />
+                <h5>Haris Kun</h5>
+              </div>
+              <div class="time-logo">
+                <ion-icon name="time-outline"></ion-icon>
+                30 min
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="img">
+              <img src="https://source.unsplash.com/random/227x200" alt="" />
+            </div>
+            <span class="category">Travel</span>
+            <div class="blog-title">
+              <h3>See more how i get an ideas</h3>
+            </div>
+            <div class="blog-body">
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos
+                beatae provident natus nam blanditiis fugit iusto dolor veniam
+                modi debitis, consectetur amet.
+              </p>
+            </div>
+            <div class="author">
+              <div class="profile">
+                <img src="https://source.unsplash.com/random/229x223" alt="" />
+                <h5>Haris Kun</h5>
+              </div>
+              <div class="time-logo">
+                <ion-icon name="time-outline"></ion-icon>
+                30 min
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="img">
+              <img src="https://source.unsplash.com/random/221x201" alt="" />
+            </div>
+            <span class="category">Travel</span>
+            <div class="blog-title">
+              <h3>Boboiboy ternyata bisa kayang</h3>
+            </div>
+            <div class="blog-body">
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum
+                quidem praesentium similique veritatis culpa repudiandae. Lorem
+                ipsum dolor sit amet.
+              </p>
+            </div>
+            <div class="author">
+              <div class="profile">
+                <img src="https://source.unsplash.com/random/229x222" alt="" />
+                <h5>Haris Kun</h5>
+              </div>
+              <div class="time-logo">
+                <ion-icon name="time-outline"></ion-icon>
+                30 min
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <!-- end blogs -->
 
       <!-- contact -->
-      <section class="contact"></section>
+      <section class="contact" id="contact">
+        <div class="content">
+          <div class="form">
+            <h2>Send Message Us</h2>
+            <input type="text" placeholder="Your Name" />
+            <input type="email" placeholder="Your Email" />
+            <input type="text" placeholder="Subject" />
+            <textarea name="" id="" rows="7" placeholder="Message"></textarea>
+            <button>Send Message</button>
+          </div>
+
+          <div class="social-media">
+            <h2>Get in Touch</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto
+              asperiores cupiditate odit in deserunt vero distinctio aut commodi
+              suscipit cum. Lorem ipsum dolor sit amet consectetur adipisicing
+              elit. Quasi, placeat. Lorem, ipsum dolor sit amet consectetur
+              adipisicing elit. Quis exercitationem perspiciatis vitae illo
+              rerum reiciendis accusantium nulla iusto,
+            </p>
+            <div class="location">
+              <ion-icon name="location-outline"></ion-icon>
+              Jl. ni saja no. 82 blog 2
+            </div>
+            <div class="wa">
+              <ion-icon name="call-outline"></ion-icon>
+              08123456789
+            </div>
+            <div class="email">
+              <ion-icon name="mail-outline"></ion-icon>
+              contact@gmail.com
+            </div>
+            <div class="social-media-logo">
+              <div class="facebook">
+                <a href="#"><i class="bi bi-facebook"></i></a>
+              </div>
+              <div class="instagram">
+                <a href=""><i class="bi bi-instagram"></i></a>
+              </div>
+              <div class="github">
+                <a href=""><i class="bi bi-github"></i></a>
+              </div>
+              <div class="youtube">
+                <a href=""><i class="bi bi-youtube"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- footer -->
+        <footer>
+          <p>&copy; copyright <span>HarisFolio.</span>  All Rights Reserved</p>
+          <p>Designed by My CSS Only</p>
+        </footer>
+        <!-- end footer -->
+      </section>
       <!-- end contact -->
     </div>
-    <!-- swiperjs -->
 
+    <!-- swiperjs -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script type="module">
       import Swiper from "https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.browser.min.js";
@@ -346,15 +499,16 @@
         loop: true,
         pagination: {
           el: ".swiper-pagination",
-          clickable: true
+          clickable: true,
         },
         autoplay: {
           delay: 5000,
-          disableOnInteraction: false
-        }
+          disableOnInteraction: false,
+        },
       });
     </script>
 
+    <!-- ionicon -->
     <script
       type="module"
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
@@ -363,6 +517,8 @@
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
+
+    <!-- my script -->
     <script src="js/script.js"></script>
   </body>
 </html>

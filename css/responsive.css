@@ -69,6 +69,11 @@
     'skill skill';
 }
 
+/* contact */
+.contact .content .social-media {
+  margin-top: 50px;
+}
+
 }
 
 /* mobile */
@@ -155,6 +160,8 @@
   /* services */
   .services {
     padding: 10px;
+    padding-top: 100px;
+    padding-bottom: 50px;
   }
 
   .services .sub-title h2 {
@@ -172,6 +179,7 @@
   /* portfolio */
   .portfolio {
     padding: 10px;
+    padding-top: 100px;
   }
 
   .portfolio .sub-title h2 {
@@ -183,5 +191,27 @@
   .swiper {
     width: 100%;
     padding: 150px 0;
+  }
+
+
+  /* blog */
+  .blogs {
+    padding: 10px;
+    padding-top: 100px;
+  }
+
+
+  /* contact */
+  .contact {
+    padding: 100px 10px; 
+    padding-bottom: 150px;
+  }
+
+  .contact .content {
+    padding: 50px 20px;
+  }
+
+  .contact .content .social-media {
+    margin-top: 50px;
   }
 }
