@@ -28,12 +28,20 @@
     'skill skill';
 }
 /* about > card img */
+
+.about .card-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
+  overflow: hidden;
+}
 .about .content .card .card-img img {
   grid-area: img;
   display: grid;
   width: 150px;
   height: 150px;
-  border-radius: 10px;
+  object-fit: cover;
+  transform: scale(1.6);
 }
 /* about > card > identity */
 .about .content .card .identity {

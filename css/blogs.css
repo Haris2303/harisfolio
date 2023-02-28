@@ -115,19 +115,23 @@
 .author .profile {
   display: grid;
   grid-template-columns: 1fr 2.5fr;
-  width: 150px;
+  width: 250px;
   align-items: center;
   margin-left: 20px;
+  overflow: hidden;
 }
 
 .blogs .content .card .author .profile img {
   width: 35px;
+  height: 35px;
   border-radius: 50%;
+  object-fit: cover;
 }
 
 .blogs .content .card .author .profile h5 {
   font-size: 16px;
   font-weight: 500;
+  margin-left: -23px;
 }
 
 .author .time-logo {
